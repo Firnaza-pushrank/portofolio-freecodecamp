@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222831;
+    color: white;
+    font-family: "Playfair Display";
+}
+
+#navbar {
+    background-color: #00acb5;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 70px;
+}
+
+#navbar header {
+    position: relative;
+    top: 7px;
+    left: 20px;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin-top: -45px;
+}
+
+#navbar li {
+    display: block;
+    margin: 10px 18px;
+    padding: 5px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: inherit;
+    font-weight: bolder;
+}
+
+#welcome-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#welcome-section h1 {
+    font-weight: 700;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+}
+
+#welcome-section p {
+    margin: -20px 0 0 0;
+    padding: 0 0 0 5px;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #393e46;
+}
+
+.projects-section h1 {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    font-size: 2.5em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    background-color: #222831;
+    box-shadow: 0 3.2px 2.4px rgba(0, 0, 0, 0.173),
+        0 8px 9.6px rgba(0, 0, 0, 0.219),
+        0 16px 24.5px rgba(0, 0, 0, 0.239),
+        0 31.6px 49.1px rgba(0, 0, 0, 0.238);
+    text-decoration: none;
+    padding: 10px 10px 0 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.project-tile p {
+    font-size: 1.25em;
+    padding: 0;
+    margin: 20px 0;
+    color: white;
+    font-weight: 700;
+}
+
+.project-tile img {
+    height: calc(100% - 6-8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contact-section h1 {
+    font-weight: 700;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section p {
+    margin: -20px 0 0 0;
+    padding: 0 0 0 5px;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+.contact-link {
+    margin: 80px 0 0 0;
+}
+
+.contact-link a {
+    margin: 0 50px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    border-top: 2px solid #00acb5;
+}
+
+.note {
+    margin: 20px 42.5% 20px 10px;
+    font-size: 1.25em;
+}
+
+.copyrigth {
+    margin: 20px 0 20px 0;
+    font-size: 1.25em;
+}
+
+.copyrigth a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
